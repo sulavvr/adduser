@@ -37,11 +37,11 @@ Unix add user implementation
 - Check if the given username already exists or not.
 - Check the validity of the username `[a-z_][a-z0-9_-]*$`. (Can contain only lowercase alphanumeric with underscore and dash, cannot start with anything other than a lowercase alphabet or an underscore)
 - Find the next available user and group ID using the passwd database.
-- Ask for password, use python and the crypt library to encrypt password based on /etc/login.defs ENCRYPT_METHOD
-- Update the /etc/passwd, /etc/group, /etc/gshadow and /etc/shadow files. (/etc/shadow doesn't need to be updated is using passwd command)
+- Ask for password, use python and the crypt library to encrypt password based on `/etc/login.defs` ENCRYPT_METHOD
+- Update the `/etc/passwd`, `/etc/group`, `/etc/gshadow` and `/etc/shadow` files. (`/etc/shadow` doesn't need to be updated is using passwd command)
 - Copy files from the skeleton directory to the new user's home directory and create a mail spool file.
 - Set permissions on the home directory.
 
 ## Notes
-- Use /etc/login.defs to find different configurations for creating mail spool file, UID, GID and encryption method.
-- After updating /etc/passwd with the record, `passwd username` command can be run to set the password for username for default unix system password setup instead of using the python script to encrypt password manually.
+- Use `/etc/login.defs` to find different configurations for creating mail spool file, UID, GID and encryption method.
+- After updating `/etc/passwd` with the record, `passwd username` command can be run to set the password for username for default unix system password setup instead of using the python script to encrypt password manually.
