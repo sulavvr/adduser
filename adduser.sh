@@ -69,8 +69,6 @@ function getUidAndGid() {
             continue        
         fi
     done
-    
-    echo $new_uid $new_gid
 }
 # get the type of encryption defined in /etc/login.defs
 function getEncryption() {
