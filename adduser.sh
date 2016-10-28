@@ -155,11 +155,6 @@ function buildRecords() {
     
     # change owner on the created mail directory
     chown $user:$user $mail_file
-    
-    #cabox:!::
-    #cabox:$6$yeA5NSIz$rWUyRMLAK4NFIEoy/LmX76FTOZ.o1hH7SHRfbufVP8/HNw/YMA0tzO9A0ByuqKHItudgY0hj.3DgD5zwMFIig1:16325:0:99999:7::: 
-    #cabox:x:1000: 
-    #cabox:x:1000:1000::/home/cabox:/bin/bash
 }
 # copy skeleton files to the home directory, 
 # default /etc/skel contains .bashrc, .profile etc..
