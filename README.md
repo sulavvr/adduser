@@ -1,5 +1,7 @@
-# adduser.sh
+# adduser.sh 
 Unix add user implementation
+
+View on the [github page](http://sulavvr.github.io/adduser/)
 
 ### Usage (command-line interface)
 	$ ./adduser -h
