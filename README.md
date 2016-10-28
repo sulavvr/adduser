@@ -38,7 +38,7 @@ Unix add user implementation
 - Check the validity of the username `[a-z_][a-z0-9_-]*$`. (Can contain only lowercase alphanumeric with underscore and dash, cannot start with anything other than a lowercase alphabet or an underscore)
 - Find the next available user and group ID using the passwd database.
 - Ask for password, use python and the crypt library to encrypt password based on `/etc/login.defs` ENCRYPT_METHOD
-- Update the `/etc/passwd`, `/etc/group`, `/etc/gshadow` and `/etc/shadow` files. (`/etc/shadow` doesn't need to be updated is using passwd command)
+- Update the `/etc/passwd`, `/etc/group`, `/etc/gshadow` and `/etc/shadow` files. (`/etc/shadow` doesn't need to be updated is using the `passwd` command)
 - Copy files from the skeleton directory to the new user's home directory and create a mail spool file.
 - Set permissions on the home directory.
 
